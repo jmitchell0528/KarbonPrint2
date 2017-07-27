@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="karbonPrint">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Karbon Print</title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <h1>Working!</h1>
+
+    <div ng-repeat="game in games">
+      <p> {{ game }} </p>
+    </div>
+
+    <!-- <ui-view></ui-view> -->
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main-ctrl.js"></script>
+  <script src="js/main-service.js"></script>
+</html>
